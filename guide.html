@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skinny → Stark · Der Gratis-Guide von Luis Föhr</title>
+<meta name="description" content="Die 3 Fehler, die fast jeder Skinny Guy macht — und ein Start-Plan für deine erste Woche. Ohne Gym. Von Luis Föhr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<style>
+  :root{
+    --lf-black:#0A0A0A;--lf-red:#E8180C;--lf-red-hot:#FF2A1F;--lf-white:#F5F5F5;
+    --lf-ink-1:#0A0A0A;--lf-ink-2:#121212;--lf-ink-3:#1A1A1A;--lf-ink-4:#242424;
+    --lf-fg:#F5F5F5;--lf-fg-muted:#9A9A9A;--lf-fg-faint:#6B6B6B;
+    --lf-border:rgba(245,245,245,0.08);--lf-border-strong:rgba(245,245,245,0.18);
+    --lf-disp:"Bebas Neue",Impact,sans-serif;
+    --lf-body:"Barlow",system-ui,-apple-system,sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--lf-ink-1);color:var(--lf-fg);font-family:var(--lf-body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  .sec{padding:clamp(40px,8vw,72px) 0;border-bottom:1px solid var(--lf-border)}
+  .sec:last-child{border-bottom:0}
+  .ey{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--lf-red);margin-bottom:16px}
+  .ey::before{content:"";width:22px;height:2px;background:var(--lf-red)}
+  h1{font-family:var(--lf-disp);font-size:clamp(44px,9vw,76px);line-height:0.92;text-transform:uppercase;letter-spacing:0.01em}
+  h1 em{font-style:normal;color:var(--lf-red)}
+  h2{font-family:var(--lf-disp);font-size:clamp(30px,5.5vw,46px);line-height:1;text-transform:uppercase;margin-bottom:18px}
+  h3{font-family:var(--lf-disp);font-size:clamp(22px,4vw,30px);line-height:1.05;text-transform:uppercase;color:var(--lf-fg);margin:0 0 8px}
+  p{margin-bottom:16px}p:last-child{margin-bottom:0}
+  .lead{font-size:clamp(18px,2.2vw,21px);color:var(--lf-fg);margin-top:20px}
+  .muted{color:var(--lf-fg-muted)}
+  strong{color:var(--lf-fg);font-weight:700}
+  .hero{padding-top:clamp(56px,12vw,96px)}
+  .cred{display:flex;align-items:center;gap:18px;background:var(--lf-ink-3);border:1px solid var(--lf-border);padding:18px 20px;margin-top:28px}
+  .cred__img{width:64px;height:64px;flex:0 0 64px;border-radius:50%;object-fit:cover;background:var(--lf-ink-4);border:1px solid var(--lf-border-strong);display:flex;align-items:center;justify-content:center;font-family:var(--lf-disp);font-size:26px;color:var(--lf-fg-faint)}
+  .cred__t{font-size:15px;line-height:1.55}
+  .cred__t b{color:var(--lf-fg)}
+  .fehler{background:var(--lf-ink-3);border:1px solid var(--lf-border);border-left:3px solid var(--lf-red);padding:24px clamp(20px,3vw,28px);margin-top:18px}
+  .fehler__n{font-family:var(--lf-disp);font-size:14px;letter-spacing:0.2em;color:var(--lf-red);margin-bottom:6px}
+  .fix{margin-top:10px;font-size:15px;color:var(--lf-fg-muted)}
+  .fix b{color:var(--lf-fg)}
+  .plan{list-style:none;margin-top:18px}
+  .plan li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--lf-border)}
+  .plan li:last-child{border-bottom:0}
+  .plan__d{font-family:var(--lf-disp);font-size:20px;color:var(--lf-red);flex:0 0 64px}
+  .plan__x b{color:var(--lf-fg)}
+  .plan__x{font-size:15px;color:var(--lf-fg-muted)}
+  blockquote{border-left:3px solid var(--lf-red);padding-left:22px;font-family:var(--lf-disp);font-size:clamp(22px,4vw,32px);line-height:1.08;text-transform:uppercase;margin:24px 0}
+  .check{list-style:none;margin-top:20px}
+  .check li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--lf-border);font-size:16px}
+  .check li:last-child{border-bottom:0}
+  .check__b{flex:0 0 22px;width:22px;height:22px;border:2px solid var(--lf-red);margin-top:2px}
+  .cta{background:var(--lf-red);text-align:center;padding:clamp(48px,9vw,80px) 22px}
+  .cta h2{color:var(--lf-white)}
+  .cta p{color:rgba(245,245,245,0.92)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--lf-body);font-weight:700;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:18px 28px;min-height:54px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+  .btn--white{background:var(--lf-white);color:var(--lf-ink-1);border-color:var(--lf-white)}
+  .btn--white:hover{transform:translateY(-2px)}
+  .btn--ghost{background:transparent;color:var(--lf-fg);border-color:var(--lf-border-strong)}
+  .btn--ghost:hover{background:rgba(245,245,245,0.06)}
+  .arr{width:11px;height:11px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin-top:-1px}
+  .note{background:var(--lf-ink-2);border:1px solid var(--lf-border-strong);padding:22px clamp(20px,3vw,26px);margin-top:24px}
+  .note h3{color:var(--lf-red);margin-bottom:10px}
+  .note p{font-size:15px;color:var(--lf-fg-muted)}
+  .note p:last-child{margin-bottom:0}
+  .note b{color:var(--lf-fg)}
+  .ps{font-size:15px;color:var(--lf-fg-muted)}
+  .ps b{color:var(--lf-fg)}
+  .foot{padding:28px 0;text-align:center;font-size:12px;color:var(--lf-fg-faint)}
+  .foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-family:var(--lf-disp);font-size:22px;letter-spacing:0.04em}
+  .brand b{color:var(--lf-red)}
+  .topbar a{font-size:13px;color:var(--lf-fg-muted)}
+</style>
+</head>
+<body>
+
+<div class="wrap topbar">
+  <span class="brand">LUIS<b>·</b>FÖHR</span>
+  <a href="/">← Zur Hauptseite</a>
+</div>
+
+<header class="wrap sec hero">
+  <div class="ey">Gratis Guide · 5 Minuten</div>
+  <h1>Skinny → <em>Stark.</em><br>Was ich gern mit 14 gewusst hätte.</h1>
+  <p class="lead">Wenn du dünn bist, schon trainierst und trotzdem nichts passiert — das hier ist für dich. Keine Theorie aus dem Internet. Die drei Fehler, die mich ein Jahr gekostet haben, und ein Plan für deine erste Woche. Ohne Gym.</p>
+
+  <div class="cred">
+    <img class="cred__img" src="lf-luis.jpg" alt="Luis Föhr" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'cred__img',textContent:'LF'}))">
+    <p class="cred__t"><b>Ich bin Luis, 17.</b> Vor drei Jahren war ich der dünne Typ, der sich in keinem Foto wohlgefühlt hat. Heute coache ich genau diese Person. Kein Theoretiker — selbst durch.</p>
+  </div>
+</header>
+
+<section class="wrap sec">
+  <div class="ey">Erstmal ehrlich</div>
+  <h2>Warum bei dir nichts passiert</h2>
+  <p>Du bist nicht faul. Du bist nicht „nicht dafür gemacht". Ich hab ein ganzes Jahr trainiert und mich danach genauso angefühlt wie vorher — nicht weil ich zu wenig gewollt hab, sondern weil mir niemand das System erklärt hat.</p>
+  <p>Die meisten skinny Jungs scheitern an denselben drei Sachen. Hier sind sie. Ungeschönt.</p>
+</section>
+
+<section class="wrap sec">
+  <div class="ey">Der Kern</div>
+  <h2>Die 3 Fehler</h2>
+
+  <div class="fehler">
+    <div class="fehler__n">FEHLER 01</div>
+    <h3>Du isst zu wenig</h3>
+    <p>Du denkst, du isst „eigentlich genug". Tust du nicht. Ein dünner Körper wächst nur mit einem Kalorien-<b>überschuss</b> — mehr rein als der Körper verbrennt. Ohne das passiert egal wie hart du trainierst: nichts.</p>
+    <p class="fix"><b>Fix:</b> Iss jeden Tag eine ordentliche Mahlzeit mehr als du gewohnt bist. Eiweiß zu jeder Mahlzeit. Wenn das Gewicht auf der Waage über 2 Wochen nicht steigt, isst du noch zu wenig.</p>
+  </div>
+
+  <div class="fehler">
+    <div class="fehler__n">FEHLER 02</div>
+    <h3>Du hast kein System</h3>
+    <p>Jede Woche andere Übungen, mal hart, mal halbherzig, kein Plan. Random Training = random Ergebnis. Der Körper verändert sich nur, wenn du ihn <b>planbar überforderst</b> und das steigerst.</p>
+    <p class="fix"><b>Fix:</b> Dieselben Grundübungen über Wochen. Jede Woche minimal mehr — eine Wiederholung, eine schwerere Variante. Aufschreiben. Das ist progressive Belastung, und sie ist der ganze Trick.</p>
+  </div>
+
+  <div class="fehler">
+    <div class="fehler__n">FEHLER 03</div>
+    <h3>Du gibst zu früh auf — allein</h3>
+    <p>Nach 4 Wochen ohne sichtbare Veränderung hörst du auf. Verständlich. Der Körper braucht länger als dein Kopf. Und allein verlierst du genau dann die Geduld, wenn es kurz davor wäre loszugehen.</p>
+    <p class="fix"><b>Fix:</b> Denk in Monaten, nicht Wochen. Und hol dir jemanden, der drauf schaut — Accountability ist kein Luxus, sie ist der Unterschied zwischen Aufgeben und Durchziehen.</p>
+  </div>
+</section>
+
+<section class="wrap sec">
+  <div class="ey">Sofort umsetzbar</div>
+  <h2>Deine erste Woche</h2>
+  <p class="muted">Kein Equipment. Nur dein Körpergewicht. 3 Tage, je ~25 Minuten. Pause zwischen den Sätzen: 90 Sek.</p>
+  <ul class="plan">
+    <li><span class="plan__d">Tag 1</span><span class="plan__x"><b>Push:</b> Liegestütze 4×so viele du sauber schaffst · Pike-Push-ups 3×8 · Dips an Stuhl/Couch 3×10</span></li>
+    <li><span class="plan__d">Tag 2</span><span class="plan__x"><b>Pull/Beine:</b> Australian Pull-ups (unter Tisch) 4×8 · Kniebeugen 4×15 · Ausfallschritte 3×10 pro Bein</span></li>
+    <li><span class="plan__d">Tag 3</span><span class="plan__x"><b>Ganzkörper:</b> Burpees 4×8 · Plank 3×45 Sek · Liegestütze 3×Maximum</span></li>
+  </ul>
+  <p class="muted" style="margin-top:16px">Notier jede Zahl. Nächste Woche: bei jeder Übung 1 Wiederholung mehr. Das ist der ganze Plan — und mehr als 90% machen.</p>
+
+  <div class="note">
+    <h3>Ehrlich gesagt</h3>
+    <p>Mit dieser einen Woche allein bekommst du <b>nicht</b> deine Traumform. Das ist ein Starter — er bringt dich ins Tun und zeigt dir das Prinzip. Mehr soll er auch gar nicht.</p>
+    <p>Und: dieser Plan ist <b>nicht für jeden</b>. Wenn du blutiger Anfänger bist, ist er genau richtig. Bist du schon weiter oder hast spezielle Ziele, brauchst du was anderes.</p>
+    <p>Für einen Plan, der auf <b>dich</b> zugeschnitten ist — dein Level, deine Zeit, dein Ziel, deine Ernährung — gibt's das kostenlose Erstgespräch. Genau dafür ist es da.</p>
+  </div>
+</section>
+
+<section class="wrap sec">
+  <div class="ey">Warum ich das mache</div>
+  <h2>Der Teil, den keiner erzählt</h2>
+  <p>2024 hatte ich endlich die Form, für die ich Jahre gebraucht hab. Dann kam ein Unfall. Krankenhaus, alles weg, wieder bei Null.</p>
+  <p>Ehrlich — da hätt ich's verstanden, wenn ich aufgehört hätte. Hab ich nicht. Sechs Monate später war ich stärker als vorher, fast nur mit meinem eigenen Körpergewicht.</p>
+  <blockquote>Nicht der Rückschlag entscheidet. Sondern ob du ein System hast, wenn du wieder anfängst.</blockquote>
+  <p>Ich coache, weil ich vier Jahre mit Fehlern verschwendet hab, die mir keiner erspart hat. Genau diese Abkürzung geb ich jetzt weiter.</p>
+</section>
+
+<section class="wrap sec">
+  <div class="ey">Kurzer Check</div>
+  <h2>Ist Coaching dein nächster Schritt?</h2>
+  <p class="muted">Ehrlich für dich selbst beantworten:</p>
+  <ul class="check">
+    <li><span class="check__b"></span><span>Trainierst du seit mehr als 3 Monaten ohne sichtbares Ergebnis?</span></li>
+    <li><span class="check__b"></span><span>Weißt du nicht genau, wie viel du wirklich essen musst?</span></li>
+    <li><span class="check__b"></span><span>Hast du niemanden, der dich wirklich accountable hält?</span></li>
+    <li><span class="check__b"></span><span>Würdest du schneller vorankommen mit einem klaren Plan für genau dich?</span></li>
+  </ul>
+</section>
+
+<section class="cta">
+  <h2>2x Ja oder mehr?</h2>
+  <p style="max-width:460px;margin:0 auto 6px">Dann ist der nächste Schritt kein weiterer Guide — sondern ein Plan für <b>dich</b>.</p>
+  <p style="max-width:460px;margin:0 auto 28px;font-size:15px">Das Erstgespräch ist kostenlos und unverbindlich. Kein Verkauf — wir schauen, ob es passt.</p>
+  <button type="button" class="btn btn--white" onclick="openCal(event)">Kostenloses Erstgespräch buchen <span class="arr"></span></button>
+</section>
+
+<section class="wrap sec">
+  <p class="ps"><b>PS:</b> Schreibst du lieber, statt einen Termin zu buchen? Geht auch — schreib mir direkt, ich antworte selbst.</p>
+  <p style="margin-top:16px"><a class="btn btn--ghost" href="https://wa.me/491712007087?text=Hi%20Luis%2C%20ich%20hab%20deinen%20Guide%20gelesen%20und%20h%C3%A4tte%20eine%20Frage." target="_blank" rel="noopener">Per WhatsApp schreiben <span class="arr"></span></a></p>
+</section>
+
+<div class="wrap foot">
+  © 2026 Luis Föhr Coaching · <a href="/">Hauptseite</a> · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a>
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+  function openCal(e){
+    e.preventDefault();
+    var url="https://calendly.com/fohrluis/30min";
+    if(window.Calendly&&Calendly.initPopupWidget){Calendly.initPopupWidget({url:url});}
+    else{window.open(url,"_blank","noopener");}
+  }
+</script>
+</body>
+</html>
